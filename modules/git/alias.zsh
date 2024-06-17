@@ -277,4 +277,6 @@ if ! zstyle -t ':prezto:module:git:alias' skip; then
   alias ga='git add .'
   alias gac='git add . && git commit -m'
   alias gcb='git checkout -b'
+  alias gforno='git fetch origin && git reset --hard origin/forno'
+  alias gmforno='git checkout forno && git fetch origin && git reset --hard origin/forno && git merge'
 fi
