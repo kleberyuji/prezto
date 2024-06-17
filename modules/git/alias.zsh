@@ -32,7 +32,7 @@ if ! zstyle -t ':prezto:module:git:alias' skip; then
   # Branch (b)
   alias gb='git branch'
   alias gba='git branch --all --verbose'
-  alias gbc='git checkout -b'
+#   alias gbc='git checkout -b'
   alias gbd='git branch --delete'
   alias gbD='git branch --delete --force'
   alias gbl='git branch --verbose'
@@ -172,7 +172,7 @@ if ! zstyle -t ':prezto:module:git:alias' skip; then
   alias ggw='git grep --word-regexp'
 
   # Index (i)
-  alias gia='git add'
+#   alias gia='git add'
   alias giA='git add --patch'
   alias giu='git add --update'
   alias gid='git diff --no-ext-diff --cached'
@@ -272,4 +272,9 @@ if ! zstyle -t ':prezto:module:git:alias' skip; then
   alias gwC='git clean --force'
   alias gwx='git rm -r'
   alias gwX='git rm -r --force'
+
+  # Custom
+  alias ga='git add .'
+  alias gac='git add . && git commit -m'
+  alias gcb='git checkout -b'
 fi
