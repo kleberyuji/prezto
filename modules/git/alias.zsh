@@ -208,7 +208,7 @@ if ! zstyle -t ':prezto:module:git:alias' skip; then
   alias gpa='git push --all'
   alias gpA='git push --all && git push --tags'
   alias gpt='git push --tags'
-  alias gpc='git push --set-upstream origin "$(git-branch-current 2> /dev/null)"'
+#   alias gpc='git push --set-upstream origin "$(git-branch-current 2> /dev/null)"'
   alias gpp='git pull origin "$(git-branch-current 2> /dev/null)" && git push origin "$(git-branch-current 2> /dev/null)"'
 
   # Rebase (r)
@@ -277,6 +277,8 @@ if ! zstyle -t ':prezto:module:git:alias' skip; then
   alias ga='git add .'
   alias gac='git add . && git commit -m'
   alias gcb='git checkout -b'
-  alias gforno='git fetch origin && git reset --hard origin/forno'
-  alias gmforno='git checkout forno && git fetch origin && git reset --hard origin/forno && git merge'
+  alias gresetforno='git fetch origin && git reset --hard origin/forno'
+  alias gmforno='git checkout forno && git pull && git merge'
+  alias gpu='git push --set-upstream origin "$(git-branch-current 2> /dev/null)"'
+  alias gst='git status'
 fi
