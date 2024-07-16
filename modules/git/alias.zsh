@@ -278,7 +278,7 @@ if ! zstyle -t ':prezto:module:git:alias' skip; then
   alias gac='git add . && git commit -m'
   alias gcb='git checkout -b'
   alias gresetforno='git fetch origin && git reset --hard origin/forno'
-  alias gmforno='git checkout forno && git pull && git merge "$(git-branch-current 2> /dev/null)"'
+  alias gmforno='git checkout forno && git pull && git merge'
   alias gpu='git push --set-upstream origin "$(git-branch-current 2> /dev/null)"'
   alias gst='git status'
 fi
